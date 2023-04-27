@@ -39,7 +39,7 @@ public class GettingStarted {
         List<Person> youngPeople = people.stream()
                 .filter(p -> p.getAge() <= 18)
                 .limit(10)
-                .collect(Collectors.toList());
+                .toList();
         youngPeople.forEach(System.out::println);
     }
 }
